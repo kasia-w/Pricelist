@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  background-color: #344d2f;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  background-color: #fac57d;
+  color: #a81817;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 25px;
+  text-transform: uppercase;
+}
+
+.christmas-image {
+  max-width: 70%;
+  margin: 25px 0;
+  padding-top: 15px;
+}
+
+.plan {
+  border-bottom: 1px solid #c8beb9;
+}
+
+.plan:last-child {
+  border-bottom: none;
+}
+
+.header {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.price {
+  text-transform: uppercase;
+  color: #344d2f;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.button {
+  border: 1px solid #f0f4f7;
+  border-radius: 10%;
+  color: #f0f4f7;
+  padding: 10px 25px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 30px 0;
+  transition: 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #344d2f;
+  transform: translateY(-3px);
+}
+
+.button.highlighted {
+  background-color: #c8beb9;
+}
+
+.button.highlighted:hover,
+.button.highlighted:focus {
+  background-color: #344d2f;
+}
+
+.features {
+  font-size: 0.9em;
+  margin: 15px 0 50px 0;
+}
+
+.feature-item {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 0 0 15px 0;
+}
+
+.star img {
+  width: 30px;
+  height: 30px;
+  padding: 10px 0 10px 0;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .christmas-image {
+    width: 100%;
+  }
+
+  .plan {
+    width: 250px;
+    border-right: 1px solid #c8beb9;
+    border-bottom: none;
+    padding: 0 25px;
+  }
+
+  .plan:nth-child(2) {
+    padding: 0 40px;
+  }
+
+  .plan:nth-child(3) {
+    border-right: none;
+  }
+
+  .feature-item {
+    height: 70px;
+  }
+}
